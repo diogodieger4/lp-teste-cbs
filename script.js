@@ -4,5 +4,5 @@ fetch("/api/env")
     document.getElementById("banner").innerText = data.message;
   })
   .catch(err => {
-    console.error("Erro ao buscar variável:", err);
+    console.error("Erro ao buscar variável:", er);
   });
