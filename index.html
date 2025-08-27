@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Básica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MinhaMarca</h1>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Bem-vindo à Minha Landing Page</h2>
+    <p>Uma página simples em HTML, CSS e JS.</p>
+    <button id="ctaBtn">Saiba Mais</button>
+  </section>
+
+  <!-- Seções -->
+  <section id="sobre" class="section">
+    <h3>Sobre Nós</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae arcu at felis accumsan fermentum.</p>
+  </section>
+
+  <section id="servicos" class="section">
+    <h3>Serviços</h3>
+    <ul>
+      <li>✔️ Desenvolvimento Web</li>
+      <li>✔️ Design Responsivo</li>
+      <li>✔️ Consultoria Técnica</li>
+    </ul>
+  </section>
+
+  <section id="contato" class="section">
+    <h3>Contato</h3>
+    <form id="contactForm">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MinhaMarca - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
