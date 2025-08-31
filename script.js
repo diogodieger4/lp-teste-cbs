@@ -8,7 +8,7 @@ fetch("/api/env")
   });
 
 fetch("https://api.cbsoficial.com.br/users")
-  .then((res) => res.json)
+  .then((res) => res.json()) // ✅ corrigido
   .then((users) => {
     const tbody = document.querySelector("#usersTable tbody");
     tbody.innerHTML = "";
@@ -21,9 +21,10 @@ fetch("https://api.cbsoficial.com.br/users")
         <td>${user.email || "-"}</td>
         <td>${user.phone || "-"}</td>
         <td>${new Date(user.created_at).toLocaleString("pt-BR")}</td>
-        `;
+      `;
+      tbody.appendChild(tr); // ✅ agora adiciona na tabela
     });
   })
   .catch((err) => {
-    console.error("Erro ao buscar usu'arios", err);
+    console.error("Erro ao buscar usuários", err);
   });
