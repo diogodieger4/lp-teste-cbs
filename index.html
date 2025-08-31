@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page com Variável de Ambiente</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Minha Landing Page 🚀</h1>
-  <div id="banner"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page com Variável de Ambiente</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Minha Landing Page 🚀</h1>
+    <div id="banner"></div>
 
-  <!-- Erro proposital: variável não definida -->
-  <script>
-    console.log(process.env.MINHA_VARIAVEL_TESTE);
-    throw new Error("Falha proposital na build 🚫");
-  </script>
+    <!-- Erro proposital: variável não definida -->
+    <script>
+      console.log(process.env.MINHA_VARIAVEL_TESTE);
+      throw new Error("Falha proposital na build 🚫");
+    </script>
 
-  <script src="script.js"></script>
-</body>
+    <h2>Lista de usuarios</h2>
+    <table id="usersTable" border="1" cellpadding="8">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>email</th>
+        <th>Telefone</th>
+        <th>Data de criacao</th>
+        <tbody></tbody>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
 </html>
